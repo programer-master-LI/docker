@@ -4,6 +4,9 @@ docker pull --platform=xxxxxx nginx
 # docker images显示所有下载过的镜像
 # docker rei删除所有下载过的镜像
 # docker rei image id删除指定的下载过的镜像
+# docker run nginx使用镜像创建并运行容器（可换成镜像id)即基于该镜像创建的容器
+# docker ps表示显示正在运行的容器进程状况
+container id是每创建一个容器就自动分配一个id，names是容器的名字（不指定容器名字⑩自动分配一个名字）
 
-
-
+# docker run -d nginx(-d加了d表示让容器在后台执行，不会占用终端界面）
+# docker run -p 80:80端口映射（冒号前的是宿主机的端口，冒号后是容器内的端口）

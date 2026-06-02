@@ -1,4 +1,4 @@
-# docker
+# Docker
 ## docker容器工业化部署
 docker就是用容器化技术给应用程序封装独立的运行环境，每个运行环境就是一个容器，运行容器的计算级被称为宿主机。
 docker容器与虚拟机的最大区别是docker容器之间共用同一个系统内核，虚拟机包含一个操作系统的完整内核，所以docker比虚拟机更轻更小，启动速度更快
@@ -127,7 +127,7 @@ sudo vi /etc/docker/daemon.json
 ```
 进入vi文本编辑器，配置linux下的镜像站
 
-输入以下内容，最后按ESC，输入 :wq! 保存退出。
+输入以下内容，最后按ESC，输入 :wq! 保存退出。（这个脚本是更换镜像下载源的操作）
 ```
 {
     "registry-mirrors": [
@@ -160,7 +160,11 @@ https://github.com/cmliu/CF-Workers-docker.io
 ## 3.去哪里找镜像
 https://docker.fxxk.dedyn.io/
 
+公共镜像源
 
+https://docker.m.daocloud.io
 
+https://docker.1panel.live
 
+https://hub.rat.dev
 

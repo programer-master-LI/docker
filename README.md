@@ -1,5 +1,5 @@
 # docker
-docker容器工业化部署
+## docker容器工业化部署
 docker就是用容器化技术给应用程序封装独立的运行环境，每个运行环境就是一个容器，运行容器的计算级被称为宿主机。
 docker容器与虚拟机的最大区别是docker容器之间共用同一个系统内核，虚拟机包含一个操作系统的完整内核，所以docker比虚拟机更轻更小，启动速度更快
 另外一个概念是镜像，镜像（大）是容器（小)的模板，镜像可以类比成是软件安装包，而容器就是安装好的软件
@@ -10,7 +10,7 @@ docker是基于linux的容器化技术，windows和mac是虚拟了一个linux子
 
 安装docker、
 ubantu系统服务器上运行docker
-~$ curl -fsSL https://get.docker.com -o install-docker.sh
+"~$ curl -fsSL https://get.docker.com -o install-docker.sh"
 ~$ sudo sh install-docker.sh
 sudo是管理员权限，super user do
 

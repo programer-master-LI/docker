@@ -1,0 +1,3 @@
+# docker pull下载软件包
+# docker images显示所有下载过的镜像
+# docker rei删除所有下载过的镜像

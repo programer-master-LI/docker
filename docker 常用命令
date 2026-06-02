@@ -1,3 +1,9 @@
-# docker pull下载软件包
+# docker pull下载镜像软件包
+docker pull --platform=xxxxxx nginx 
+（填linux/amd64 linux/arm64 linux/arm/v7 linux/arm/v6）
 # docker images显示所有下载过的镜像
 # docker rei删除所有下载过的镜像
+# docker rei image id删除指定的下载过的镜像
+
+
+

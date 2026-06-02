@@ -12,6 +12,8 @@ docker是基于linux的容器化技术，windows和mac是虚拟了一个linux子
 ubantu系统服务器上运行docker
 ~$ curl -fsSL https://get.docker.com -o install-docker.sh
 ~$ sudo sh install-docker.sh
+sudo是管理员权限，super user do
+
 在wondows下载运行docker
 官网下载桌面版可视化docker或者命令行start /w"" "Docker Desktop Installer.exe" intall --intallation-dir=D:\Docker
 输入docker --version打印版本号则显示安装成功

@@ -1,4 +1,7 @@
 容器的做法：把代码、运行环境、系统库、配置全部打包成一个“镜像”。
+相当于一个更轻量化的虚拟机
+安装一个复杂的软件（比如部署一个包含数据库、缓存、后端服务的系统），容器就能搭建好一个复杂的开发或生产环境
+让软件的开发、测试和运维实现了真正意义上的标准化。
 
 # docker pull下载镜像软件包
 docker pull --platform=xxxxxx nginx 
@@ -12,7 +15,11 @@ docker pull --platform=xxxxxx nginx
 # docker rei删除所有下载过的镜像
 # docker rei image id删除指定的下载过的镜像
 # docker run nginx使用镜像创建并运行容器（可换成镜像id)即基于该镜像创建的容器
+# docker create只创建容器不立即启动容器 
+# docker create -p 27017：27017 mongo 创建了一个mongo数据库
+
 # docker ps表示显示正在运行的容器进程状况
+# docker ps -a表示显示所有正在停止和运行的容器进程状况all
 container id是每创建一个容器就自动分配一个id，names是容器的名字（不指定容器名字⑩自动分配一个名字）
 
 run命令
@@ -26,8 +33,10 @@ exit退出，可以用来临时调试一个容器
 
 容器调试
 docker run是从镜像创建并运行容器，每次执行run就会创建一个容器，所以不想创建新容器
-只想对原有容器进行启停，使用docker start 容器id/名字，，docker stop 容器id/名字 停止容器恶的运行
+只想对原有容器进行启停，使用docker start 容器id/名字，，docker stop 容器id/名字 停止容器的运行
 
+常用参数端口映射，挂载卷，环境变量等
+# docker inspect 容器id   显示查看某个容器的参数端口映射，挂载卷，环境变量等
 
 -p端口映射
 # docker run -p 80:80端口映射（冒号前的是宿主机的端口，冒号后是容器内的端口）把容器和宿主机端口绑定

@@ -1,0 +1,19 @@
+#支持 GPU + 模型挂载 + 端口映射
+
+version: '3'
+services:
+  ai-app:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+      - ./models:/app/models  # 挂载模型文件夹
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    restart: always

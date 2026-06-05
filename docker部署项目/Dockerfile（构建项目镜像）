@@ -1,3 +1,5 @@
+#打包你的项目环境
+
 # 基础镜像（Python + CUDA 可选）
 FROM python:3.10-slim
 

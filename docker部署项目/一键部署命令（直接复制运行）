@@ -1,0 +1,8 @@
+# 构建并启动容器
+docker-compose up -d
+
+# 查看运行日志
+docker-compose logs -f
+
+# 停止项目
+docker-compose down
